@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Destinations – Tryx Horizons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_anglais.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav class="menu">
+        <div class="menu-logo">TRYX<span>H</span></div>
+        <ul>
+            <li><a href="index.html" id="n-acc"><span>🏠</span> Home</a></li>
+            <li><a href="#catalogue" id="n-cat"><span>🪐</span> Catalog</a></li>
+            <li><a href="vaisseau_page.html" id="n-vais"><span>🚀</span> Spaceship</a></li>
+            <li><a href="on_board.html" id="n-onboard"><span>🛋️</span> On Board</a></li>
+            <li><a href="work.html" id="n-work"><span>💼</span> Careers</a></li>
+            <li><a href="contact.html" id="n-cont"><span>📞</span> Contact</a></li>
+            <li><button id="btn-translate" class="translate-btn">EN / FR</button></li>
+        </ul>
+        <div class="system-status">
+            <span class="dot"></span> <span id="status-text">SYSTEM OPERATIONAL</span>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        
+        <header>
+            <h1 id="page-title">Destinations</h1>
+            <p class="slogan" id="page-slogan">Explore the edges of the system and beyond</p>
+        </header>
+
+        <main id="catalogue">
+            <div class="destinations-grid">
+                <div class="dest-card">
+                    <div class="dest-header">
+                        <h3 class="d-name">Arès-Genesis</h3>
+                        <span class="dest-tag">MARS</span>
+                    </div>
+                    <p class="d-desc">Discover the geodesic domes of Valles Marineris. A unique low-gravity hiking experience.</p>
+                    <ul class="dest-specs">
+                        <li><span class="l-dist">Distance:</span> 0,0000238 ly</li>
+                        <li><span class="l-dur">Duration:</span> 7 months (One way)</li>
+                        <li><span class="l-price">Price:</span> 50 000 $</li>
+                    </ul>
+                </div>
+
+                <div class="dest-card">
+                    <div class="dest-header">
+                        <h3 class="d-name">Abyss-Orange</h3>
+                        <span class="dest-tag">TITAN</span>
+                    </div>
+                    <p class="d-desc">Admire the methane lakes and electric orange sky of Saturn's largest moon.</p>
+                    <ul class="dest-specs">
+                        <li><span class="l-dist">Distance:</span> 0,000148 ly</li>
+                        <li><span class="l-dur">Duration:</span> 4 years (One way)</li>
+                        <li><span class="l-price">Price:</span> 120 000 $</li>
+                    </ul>
+                </div>
+
+                <div class="dest-card">
+                    <div class="dest-header">
+                        <h3 class="d-name">Cryo-Enigma</h3>
+                        <span class="dest-tag">EUROPA</span>
+                    </div>
+                    <p class="d-desc">Panoramic sub-glacial hotel. Observe exotic marine life beneath 10km of ice.</p>
+                    <ul class="dest-specs">
+                        <li><span class="l-dist">Distance:</span> 0,0000664 ly</li>
+                        <li><span class="l-dur">Duration:</span> 3 years (One way)</li>
+                        <li><span class="l-price">Price:</span> 200 000 $</li>
+                    </ul>
+                </div>
+
+                <div class="dest-card">
+                    <div class="dest-header">
+                        <h3 class="d-name">Nova-Proxima</h3>
+                        <span class="dest-tag">PROXIMA B</span>
+                    </div>
+                    <p class="d-desc">Our first extrasolar outpost. A cryogenic journey to a new Earth.</p>
+                    <ul class="dest-specs">
+                        <li><span class="l-dist">Distance:</span> 4,2 ly</li>
+                        <li><span class="l-dur">Duration:</span> 15.5 years</li>
+                        <li><span class="l-price">Price:</span> 1 500 000 $</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p id="f-text">&copy; 2026 Tryx Horizons – Interstellar Travel Center</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+
+    <script>
+        const btn = document.getElementById('btn-translate');
+        let currentLang = sessionStorage.getItem('siteLang') || 'en';
+
+        const translations = {
+            en: {
+                nav: [
+                    "<span>🏠</span> Home", 
+                    "<span>🪐</span> Catalog", 
+                    "<span>🚀</span> Spaceship", 
+                    "<span>🛋️</span> On Board", 
+                    "<span>💼</span> Careers",
+                    "<span>📞</span> Contact"
+                ],
+                status: "SYSTEM OPERATIONAL",
+                title: "Destinations",
+                slogan: "Explore the edges of the system and beyond",
+                descs: [
+                    "Discover the geodesic domes of Valles Marineris. A unique low-gravity hiking experience.",
+                    "Admire the methane lakes and electric orange sky of Saturn's largest moon.",
+                    "Panoramic sub-glacial hotel. Observe exotic marine life beneath 10km of ice.",
+                    "Our first extrasolar outpost. A cryogenic journey to a new Earth."
+                ],
+                labels: ["Distance:", "Duration:", "Price:"],
+                durations: ["7 months (One way)", "4 years (One way)", "3 years (One way)", "15.5 years"],
+                unit: "ly",
+                footer: "© 2026 Tryx Horizons – Interstellar Travel Center",
+                popup: ["ALERT: Urgent transmission received!", "VIEW"]
+            },
+            fr: {
+                nav: [
+                    "<span>🏠</span> Accueil", 
+                    "<span>🪐</span> Catalogue", 
+                    "<span>🚀</span> Vaisseau", 
+                    "<span>🛋️</span> À Bord", 
+                    "<span>💼</span> Recrutement",
+                    "<span>📞</span> Contact"
+                ],
+                status: "SYSTÈME OPÉRATIONNEL",
+                title: "Destinations",
+                slogan: "Explorez les confins du système et au-delà",
+                descs: [
+                    "Découvrez les dômes géodésiques de Valles Marineris. Une expérience unique de randonnée en basse gravité.",
+                    "Admirez les lacs de méthane et le ciel orange électrique de la plus grande lune de Saturne.",
+                    "Hôtel sous-glaciaire panoramique. Observez la vie marine exotique sous 10km de glace.",
+                    "Notre premier avant-poste extrasolaire. Un voyage cryogénique vers une nouvelle Terre."
+                ],
+                labels: ["Distance :", "Durée :", "Prix :"],
+                durations: ["7 mois (Aller)", "4 ans (Aller)", "3 ans (Aller)", "15.5 ans"],
+                unit: "al",
+                footer: "© 2026 Tryx Horizons – Centre de Voyage Interstellaire",
+                popup: ["ALERTE : Transmission urgente reçue !", "CONSULTER"]
+            }
+        };
+
+        function applyTranslation(lang) {
+            const t = translations[lang];
+
+            // Navigation
+            document.getElementById('n-acc').innerHTML = t.nav[0];
+            document.getElementById('n-cat').innerHTML = t.nav[1];
+            document.getElementById('n-vais').innerHTML = t.nav[2];
+            document.getElementById('n-onboard').innerHTML = t.nav[3];
+            document.getElementById('n-work').innerHTML = t.nav[4];
+            document.getElementById('n-cont').innerHTML = t.nav[5];
+
+            // Status & Titles
+            document.getElementById('status-text').textContent = t.status;
+            document.getElementById('page-title').textContent = t.title;
+            document.getElementById('page-slogan').textContent = t.slogan;
+
+            // Descriptions
+            const descElements = document.querySelectorAll('.d-desc');
+            descElements.forEach((el, index) => {
+                el.textContent = t.descs[index];
+            });
+
+            // Specs Labels (Distance, Durée, Prix)
+            document.querySelectorAll('.l-dist').forEach(el => el.textContent = t.labels[0]);
+            document.querySelectorAll('.l-dur').forEach(el => el.textContent = t.labels[1]);
+            document.querySelectorAll('.l-price').forEach(el => el.textContent = t.labels[2]);
+
+            // Distances and Units
+            const distSpecs = document.querySelectorAll('.dest-specs li:first-child');
+            const distValues = ["0,0000238", "0,000148", "0,0000664", "4,2"];
+            distSpecs.forEach((li, index) => {
+                li.innerHTML = `<span class="l-dist">${t.labels[0]}</span> ${distValues[index]} ${t.unit}`;
+            });
+
+            // Durations
+            const durSpecs = document.querySelectorAll('.dest-specs li:nth-child(2)');
+            durSpecs.forEach((li, index) => {
+                li.innerHTML = `<span class="l-dur">${t.labels[1]}</span> ${t.durations[index]}`;
+            });
+
+            // Footer
+            document.getElementById('f-text').innerHTML = t.footer;
+
+            const popupText = document.getElementById('popup-text');
+            const popupLink = document.getElementById('popup-link');
+            if (popupText && popupLink) {
+                popupText.textContent = t.popup[0];
+                popupLink.textContent = t.popup[1];
+            }
+        }
+
+        applyTranslation(currentLang);
+
+        // Gestion du Popup Persistant
+        window.addEventListener('load', () => {
+            applyTranslation(currentLang);
+            const popup = document.getElementById('urgent-popup');
+            if (sessionStorage.getItem('showUrgentPopup') === 'true') {
+                if (popup) popup.classList.add('show');
+            }
+            document.getElementById('close-popup')?.addEventListener('click', () => {
+                popup.classList.remove('show');
+                sessionStorage.setItem('showUrgentPopup', 'dismissed');
+            });
+            document.getElementById('popup-link')?.addEventListener('click', () => {
+                sessionStorage.setItem('triggerNostromo', 'true');
+                sessionStorage.setItem('showUrgentPopup', 'dismissed');
+            });
+        });
+
+        btn.addEventListener('click', () => {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            sessionStorage.setItem('siteLang', currentLang);
+            applyTranslation(currentLang);
+        });
+    </script>
+
+    <div id="urgent-popup" class="urgent-popup">
+        <div class="popup-content">
+            <span class="warning-icon">⚠️</span>
+            <span id="popup-text">ALERT: Urgent transmission received!</span>
+            <a href="contact.html#log-section" id="popup-link" class="popup-btn">VIEW</a>
+            <button id="close-popup" class="close-btn">&times;</button>
+        </div>
+    </div>
+</body>
+</html>

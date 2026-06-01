@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tryx Horizons – Extraplanetary Voyages</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Space agency offering extraplanetary voyages.">
+    <link rel="stylesheet" href="css_anglais.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav class="menu">
+        <div class="menu-logo">TRYX<span>H</span></div>
+        <ul>
+            <li><a href="#accueil" id="n-acc"><span>🏠</span> Home</a></li>
+            <li><a href="destinations.html" id="n-dest"><span>🪐</span> Destinations</a></li>
+            <li><a href="vaisseau_page.html" id="n-vais"><span>🚀</span> Ship</a></li>
+            <li><a href="on_board.html" id="n-onboard"><span>🛋️</span> On Board</a></li>
+            <li><a href="work.html" id="n-work"><span>💼</span> Careers</a></li>
+            <li><a href="contact.html" id="n-cont"><span>📞</span> Contact</a></li>
+            <li><button id="btn-translate" class="translate-btn">EN / FR</button></li>
+        </ul>
+        <div class="system-status">
+            <span class="dot"></span> <span id="status-text">SYSTEM OPERATIONAL</span>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        
+        <header id="accueil">
+            <h1 id="m-title">Tryx Horizons</h1>
+            <p class="slogan" id="m-slogan">« The universe is waiting for you »</p>
+        </header>
+
+        <main>
+            <section id="destinations" class="destinations-section">
+                <h2 id="d-title">Active Exploration Programs</h2>
+                
+                <div class="destinations-grid">
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3>Arès-Genesis</h3>
+                            <span class="dest-tag" id="t-mars">Target: Mars</span>
+                        </div>
+                        <p id="p-mars">Establish the first sustainable bases in the canyons of Valles Marineris.</p>
+                        <ul class="dest-specs">
+                            <li><span class="s-fen">⏳ Window:</span> 3.5 months</li>
+                            <li><span class="s-env">🌡️ Environment:</span> -63°C</li>
+                            <li><span class="s-ris">🛡️ Risk:</span> Nominal</li>
+                        </ul>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3>Abyss-Orange</h3>
+                            <span class="dest-tag" id="t-titan">Target: Titan</span>
+                        </div>
+                        <p id="p-titan">Atmospheric navigation and study of liquid methane cycles.</p>
+                        <ul class="dest-specs">
+                            <li><span class="s-fen">⏳ Window:</span> 1.8 years</li>
+                            <li><span class="s-env">🌡️ Environment:</span> -179°C</li>
+                            <li><span class="s-ris">🛡️ Risk:</span> Moderate</li>
+                        </ul>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3>Cryo-Enigma</h3>
+                            <span class="dest-tag" id="t-europa">Target: Europa</span>
+                        </div>
+                        <p id="p-europa">Deep drilling of the ice crust to reach the sub-surface ocean.</p>
+                        <ul class="dest-specs">
+                            <li><span class="s-fen">⏳ Window:</span> 1.4 years</li>
+                            <li><span class="s-env">🌡️ Environment:</span> -160°C</li>
+                            <li><span class="s-ris">🛡️ Risk:</span> Critical</li>
+                        </ul>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3>Nova-Proxima</h3>
+                            <span class="dest-tag" id="t-proxima">Target: Proxima b</span>
+                        </div>
+                        <p id="p-proxima">First extrasolar colonization to the closest exoplanet to our system.</p>
+                        <ul class="dest-specs">
+                            <li><span class="s-fen">⏳ Window:</span> 15.5 years</li>
+                            <li><span class="s-env">🌡️ Environment:</span> -39°C</li>
+                            <li><span class="s-ris">🛡️ Risk:</span> Extreme</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="vaisseau" class="vaisseau">
+                <div class="vaisseau-header">
+                    <h2 id="v-title">Flagship: Astra Voyager</h2>
+                    <span class="vessel-class" id="v-class">Interstellar Class</span>
+                </div>
+
+                <div class="vaisseau-visual">
+                    <img src="vaisseau.jpeg" alt="Spaceship Astra Voyager">
+                    <div class="scan-bar"></div>
+                </div>
+
+                <p class="vaisseau-desc" id="v-desc">
+                    The Astra Voyager combines fusion propulsion, panoramic habitats, and artificial gravity for a safe and luxurious travel experience.
+                </p>
+
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <span class="spec-label" id="l-prop">Propulsion</span>
+                        <span class="spec-value">Pulsed Fusion (HE-3)</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label" id="l-speed">Max Speed</span>
+                        <span class="spec-value">80 000 km/s (0.27c)</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label" id="l-cap">Capacity</span>
+                        <span class="spec-value">1,200 Passengers</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label" id="l-aut">Autonomy</span>
+                        <span class="spec-value">75 Earth Years</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label" id="l-grav">Gravity</span>
+                        <span class="spec-value">Centrifuge (0.98g)</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="reservations" class="intro">
+                <h2 id="r-title">Ready to depart?</h2>
+                <p id="r-text">Our next launch windows are open for summer 2026. Book your cabin with a nebula view today.</p>
+            </section>
+
+            <section id="contact" class="intro">
+                <h2 id="c-title">Contact Control Center</h2>
+                <p id="c-text">Need assistance? Our agents are available 24/7 via sub-space communication.</p>
+            </section>
+        </main>
+
+        <footer>
+            <p id="f-text">&copy; 2026 Tryx Horizons – All rights reserved</p>
+            <button onclick="sessionStorage.clear(); location.reload();" style="background:transparent; border:1px solid #ff3e3e; color:#ff3e3e; cursor:pointer; font-size:10px; margin-top:10px; font-family:Orbitron;">RESET (DEV)</button>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+
+    <script>
+        
+        const btn = document.getElementById('btn-translate');
+        let currentLang = sessionStorage.getItem('siteLang') || 'en';
+
+        const translations = {
+            en: {
+                nav: ["<span>🏠</span> Home", "<span>🪐</span> Destinations", "<span>🚀</span> Ship", "<span>🛋️</span> On Board", "<span>💼</span> Careers", "<span>📞</span> Contact"],
+                status: "SYSTEM OPERATIONAL",
+                slogan: "« The universe is waiting for you »",
+                dTitle: "Active Exploration Programs",
+                tags: ["Target: Mars", "Target: Titan", "Target: Europa", "Target: Proxima b"],
+                windows: ["3.5 months", "1.8 years", "1.4 years", "15.5 years"],
+                descs: [
+                    "Establish the first sustainable bases in the canyons of Valles Marineris.",
+                    "Atmospheric navigation and study of liquid methane cycles.",
+                    "Deep drilling of the ice crust to reach the sub-surface ocean.",
+                    "First extrasolar colonization to the closest exoplanet to our system."
+                ],
+                vessel: ["Flagship: Astra Voyager", "Interstellar Class", "The Astra Voyager combines fusion propulsion, panoramic habitats, and artificial gravity for a safe and luxurious travel experience."],
+                labels: ["Propulsion", "Max Speed", "⏳ Window:", "🌡️ Environment:", "🛡️ Risk:", "Capacity", "Autonomy", "Gravity"],
+                cta: ["Ready to depart?", "Our next launch windows are open for summer 2026. Book your cabin with a nebula view today."],
+                contact: ["Contact Control Center", "Need assistance? Our agents are available 24/7 via sub-space communication."],
+                footer: "© 2026 Tryx Horizons – All rights reserved",
+                popup: ["ALERT: Urgent transmission received!", "VIEW"]
+            },
+            fr: {
+                nav: ["<span>🏠</span> Accueil", "<span>🪐</span> Destinations", "<span>🚀</span> Vaisseau", "<span>🛋️</span> À Bord", "<span>💼</span> Recrutement", "<span>📞</span> Contact"],
+                status: "SYSTÈME OPÉRATIONNEL",
+                slogan: "« L’univers n’attend que vous »",
+                dTitle: "Programmes d'Exploration Active",
+                tags: ["Objectif : Mars", "Objectif : Titan", "Objectif : Europa", "Objectif : Proxima b"],
+                windows: ["3.5 mois", "1.8 ans", "1.4 ans", "15.5 ans"],
+                descs: [
+                    "Établissez les premières bases durables dans les canyons de Valles Marineris.",
+                    "Navigation atmosphérique et étude des cycles du méthane liquide.",
+                    "Forage profond de la croûte glaciaire pour atteindre l'océan sous-terrain.",
+                    "Première colonisation extrasolaire vers l'exoplanète la plus proche de notre système."
+                ],
+                vessel: ["Vaisseau Amiral : Astra Voyager", "Classe Interstellaire", "L’Astra Voyager combine propulsion à fusion, habitats panoramiques et gravité artificielle pour offrir une expérience de voyage interstellaire sécurisée et luxueuse."],
+                labels: ["Propulsion", "Vitesse Max", "⏳ Fenêtre :", "🌡️ Environnement :", "🛡️ Risque :", "Capacité", "Autonomie", "Gravité"],
+                cta: ["Prêt pour le départ ?", "Nos prochaines fenêtres de lancement sont ouvertes pour l'été 2026. Réservez votre cabine avec vue sur nébuleuse dès aujourd'hui."],
+                contact: ["Contactez le centre de contrôle", "Besoin d'assistance ? Nos agents sont disponibles 24h/24 par communication sub-espace."],
+                footer: "© 2026 Tryx Horizons – Tous droits réservés",
+                popup: ["ALERTE : Transmission urgente reçue !", "CONSULTER"]
+            }
+        };
+
+        function applyTranslation(lang) {
+            const t = translations[lang];
+
+            document.getElementById('n-acc').innerHTML = t.nav[0];
+            document.getElementById('n-dest').innerHTML = t.nav[1];
+            document.getElementById('n-vais').innerHTML = t.nav[2];
+            document.getElementById('n-onboard').innerHTML = t.nav[3];
+            document.getElementById('n-work').innerHTML = t.nav[4];
+            document.getElementById('n-cont').innerHTML = t.nav[5];
+            document.getElementById('status-text').textContent = t.status;
+            document.getElementById('m-slogan').textContent = t.slogan;
+            document.getElementById('d-title').textContent = t.dTitle;
+            
+            const ids = ['mars', 'titan', 'europa', 'proxima'];
+            ids.forEach((id, index) => {
+                document.getElementById(`t-${id}`).textContent = t.tags[index];
+                document.getElementById(`p-${id}`).textContent = t.descs[index];
+            });
+
+            const windowElements = document.querySelectorAll('.dest-specs li:first-child');
+            windowElements.forEach((el, index) => {
+                el.innerHTML = `<span class="s-fen">${t.labels[2]}</span> ${t.windows[index]}`;
+            });
+
+            document.getElementById('v-title').textContent = t.vessel[0];
+            document.getElementById('v-class').textContent = t.vessel[1];
+            document.getElementById('v-desc').textContent = t.vessel[2];
+            
+            document.getElementById('l-prop').textContent = t.labels[0];
+            document.getElementById('l-speed').textContent = t.labels[1];
+            document.getElementById('l-cap').textContent = t.labels[5];
+            document.getElementById('l-aut').textContent = t.labels[6];
+            document.getElementById('l-grav').textContent = t.labels[7];
+
+            document.getElementById('r-title').textContent = t.cta[0];
+            document.getElementById('r-text').textContent = t.cta[1];
+            document.getElementById('c-title').textContent = t.contact[0];
+            document.getElementById('c-text').textContent = t.contact[1];
+            document.getElementById('f-text').textContent = t.footer;
+
+            const popupText = document.getElementById('popup-text');
+            const popupLink = document.getElementById('popup-link');
+            if (popupText && popupLink) {
+                popupText.textContent = t.popup[0];
+                popupLink.textContent = t.popup[1];
+            }
+
+            document.querySelectorAll('.s-env').forEach(el => el.textContent = t.labels[3]);
+            document.querySelectorAll('.s-ris').forEach(el => el.textContent = t.labels[4]);
+        }
+
+        applyTranslation(currentLang);
+
+        btn.addEventListener('click', () => {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            sessionStorage.setItem('siteLang', currentLang);
+            applyTranslation(currentLang);
+        });
+
+        window.addEventListener('load', () => {
+            // On relance la traduction au chargement pour attraper les éléments 
+            // définis après le script (comme le popup)
+            applyTranslation(currentLang);
+
+            const popup = document.getElementById('urgent-popup');
+
+            // Vérifie si le popup doit être affiché immédiatement (si déjà déclenché ailleurs)
+            if (sessionStorage.getItem('showUrgentPopup') === 'true') {
+                if (popup) popup.classList.add('show');
+            } else if (sessionStorage.getItem('showUrgentPopup') === null) {
+                // Premier déclenchement après 4 secondes sur la home
+                setTimeout(() => {
+                    sessionStorage.setItem('showUrgentPopup', 'true');
+                    if (popup) popup.classList.add('show');
+                }, 4000);
+            }
+
+            const closeBtn = document.getElementById('close-popup');
+            if (closeBtn) {
+                closeBtn.addEventListener('click', () => {
+                    if (popup) popup.classList.remove('show');
+                    sessionStorage.setItem('showUrgentPopup', 'dismissed');
+                });
+            }
+
+            const popupLink = document.getElementById('popup-link');
+            if (popupLink) {
+                popupLink.addEventListener('click', () => {
+                    sessionStorage.setItem('triggerNostromo', 'true');
+                    sessionStorage.setItem('showUrgentPopup', 'dismissed');
+                });
+            }
+        });
+    </script>
+
+    <div id="urgent-popup" class="urgent-popup">
+        <div class="popup-content">
+            <span class="warning-icon">⚠️</span>
+            <span id="popup-text">ALERT: Urgent transmission received!</span>
+            <a href="contact.html#log-section" id="popup-link" class="popup-btn">VIEW</a>
+            <button id="close-popup" class="close-btn">&times;</button>
+        </div>
+    </div>
+</body>
+</html>

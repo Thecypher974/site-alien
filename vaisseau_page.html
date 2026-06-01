@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vaisseau – Astra Voyager – Tryx Horizons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_anglais.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav class="menu">
+        <div class="menu-logo">TRYX<span>H</span></div>
+        <ul>
+            <li><a href="index.html" id="n-acc"><span>🏠</span> Home</a></li>
+            <li><a href="destinations.html" id="n-dest"><span>🪐</span> Destinations</a></li>
+            <li><a href="#vaisseau-details" id="n-vais" class="active"><span>🚀</span> Specs</a></li>
+            <li><a href="on_board.html" id="n-onboard"><span>🛋️</span> On Board</a></li>
+            <li><a href="work.html" id="n-work"><span>💼</span> Careers</a></li>
+            <li><a href="contact.html" id="n-cont"><span>📞</span> Contact</a></li>
+            <li><button id="btn-translate" class="translate-btn">EN / FR</button></li>
+        </ul>
+        <div class="system-status">
+            <span class="dot"></span> <span id="status-text">SYSTEM OPERATIONAL</span>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        
+        <header>
+            <h1 id="page-title">Astra Voyager</h1>
+            <p class="slogan" id="page-slogan">The flagship of interstellar engineering</p>
+        </header>
+
+        <main id="vaisseau-details">
+            <section class="vaisseau">
+                <div class="vaisseau-header">
+                    <h2 id="v-sub">Technical Specifications</h2>
+                    <span class="vessel-class" id="v-class">Horizon-9 Series</span>
+                </div>
+
+                <div class="vaisseau-visual">
+                    <img src="vaisseau.jpeg" alt="Astra Voyager Blueprints">
+                    <div class="scan-bar"></div>
+                </div>
+
+                <div class="specs-grid">
+                    <div class="spec-card">
+                        <span class="spec-label" id="l-prop">Propulsion</span>
+                        <span class="spec-value">Pulsed Fusion (HE-3)</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label" id="l-speed">Cruising Speed</span>
+                        <span class="spec-value">0.27c (80,000 km/s)</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label" id="l-shield">Shielding</span>
+                        <span class="spec-value">Polarized Magnetic</span>
+                    </div>
+                    <div class="spec-card">
+                        <span class="spec-label" id="l-energy">Energy Source</span>
+                        <span class="spec-value">4 Antimatter Reactors</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="security-systems">
+                <h2 id="sec-title">Security & Defense Protocols</h2>
+                <div class="destinations-grid">
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="sec1-name">'Aegis' Surveillance AI</h3>
+                            <span class="dest-tag">ACTIVE</span>
+                        </div>
+                        <p id="sec1-desc">Real-time hull integrity analysis and unauthorized bio-signature detection.</p>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="sec2-name">Perimeter Defense</h3>
+                        </div>
+                        <p id="sec2-desc">Auto-targeting laser network for neutralizing micro-meteorites.</p>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="sec3-name">Emergency Containment</h3>
+                        </div>
+                        <p id="sec3-desc">Magnetic-sealed armored bulkheads and selective depressurization protocols.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="lifeboats">
+                <h2 id="life-title">Emergency Evacuation Units</h2>
+                <div class="destinations-grid">
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="life1-name">Class-S Escape Pods</h3>
+                        </div>
+                        <p id="life1-desc">80 pods across all decks, capable of sustaining 15 people for 6 months in biostasis.</p>
+                        <ul class="dest-specs">
+                            <li><span id="l-auto">Autonomy:</span> 180 Days</li>
+                        </ul>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="life2-name">Long Distance Shuttles</h3>
+                        </div>
+                        <p id="life2-desc">2 autonomous backup vessels equipped with light warp drives to reach the nearest starbase.</p>
+                        <ul class="dest-specs">
+                            <li><span id="l-warp">FTL Cap:</span> 0.05c</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="decks">
+                <h2 id="decks-title">Ship Configuration</h2>
+                <div class="destinations-grid">
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="deck1-name">Deck Alpha - Command</h3>
+                        </div>
+                        <p id="deck1-desc">Navigation bridge, sub-space comms, and senior officer quarters.</p>
+                        <ul class="dest-specs">
+                            <li><span id="l-access">Access:</span> Priority</li>
+                        </ul>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="deck2-name">Deck Beta - Residential</h3>
+                        </div>
+                        <p id="deck2-desc">Luxury cabins with deep space views, gardens, and recreation areas.</p>
+                        <ul class="dest-specs">
+                            <li><span id="l-capacity">Capacity:</span> 1,200 PAX</li>
+                        </ul>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="deck3-name">Deck Gamma - Engineering</h3>
+                        </div>
+                        <p id="deck3-desc">Reactor maintenance, life support systems, and cryo-storage.</p>
+                        <ul class="dest-specs">
+                            <li><span id="l-status">Status:</span> Secured</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p id="f-text">&copy; 2026 Tryx Horizons – Naval Technology Department</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+
+    <script>
+        const btn = document.getElementById('btn-translate');
+        let currentLang = sessionStorage.getItem('siteLang') || 'en';
+
+        const translations = {
+            en: {
+                nav: ["<span>🏠</span> Home", "<span>🪐</span> Destinations", "<span>🚀</span> Specs", "<span>🛋️</span> On Board", "<span>💼</span> Careers", "<span>📞</span> Contact"],
+                status: "SYSTEM OPERATIONAL",
+                title: "Astra Voyager",
+                slogan: "The flagship of interstellar engineering",
+                sub: "Technical Specifications",
+                class: "Horizon-9 Series",
+                labels: ["Propulsion", "Cruising Speed", "Shielding", "Energy Source", "Access:", "Capacity:", "Status:", "Autonomy:", "FTL Cap:"],
+                vValues: ["Pulsed Fusion (HE-3)", "0.27c (80,000 km/s)", "Polarized Magnetic", "4 Antimatter Reactors"],
+                secTitle: "Security & Defense Protocols",
+                secNames: ["'Aegis' Surveillance AI", "Perimeter Defense", "Emergency Containment"],
+                secDescs: ["Real-time hull integrity analysis and unauthorized bio-signature detection.", "Auto-targeting laser network for neutralizing micro-meteorites.", "Magnetic-sealed armored bulkheads and selective depressurization protocols."],
+                lifeTitle: "Emergency Evacuation Units",
+                lifeNames: ["Class-S Escape Pods", "Long Distance Shuttles"],
+                lifeDescs: ["80 pods across all decks, capable of sustaining 15 people for 6 months in biostasis.", "2 autonomous backup vessels equipped with light warp drives to reach the nearest starbase."],
+                decksTitle: "Ship Configuration",
+                deckNames: ["Deck Alpha - Command", "Deck Beta - Residential", "Deck Gamma - Engineering"],
+                deckDescs: ["Navigation bridge, sub-space comms, and senior officer quarters.", "Luxury cabins with deep space views, gardens, and recreation areas.", "Reactor maintenance, life support systems, and cryo-storage."],
+                footer: "© 2026 Tryx Horizons – Naval Technology Department",
+                popup: ["ALERT: Urgent transmission received!", "VIEW"]
+            },
+            fr: {
+                nav: ["<span>🏠</span> Accueil", "<span>🪐</span> Destinations", "<span>🚀</span> Caractéristiques", "<span>🛋️</span> À Bord", "<span>💼</span> Recrutement", "<span>📞</span> Contact"],
+                status: "SYSTÈME OPÉRATIONNEL",
+                title: "Astra Voyager",
+                slogan: "Le fleuron de l'ingénierie interstellaire",
+                sub: "Spécifications Techniques",
+                class: "Série Horizon-9",
+                labels: ["Propulsion", "Vitesse de Croisière", "Bouclier", "Énergie", "Accès :", "Capacité :", "Statut :", "Autonomie :", "Capacité FTL :"],
+                vValues: ["Fusion Pulsée (HE-3)", "0.27c (80,000 km/s)", "Magnétique Polarisé", "4 Réacteurs à Antimatière"],
+                secTitle: "Protocoles de Sécurité & Défense",
+                secNames: ["IA de Surveillance 'Aegis'", "Défense Périmétrique", "Confinement d'Urgence"],
+                secDescs: ["Analyse en temps réel des intégrités de coque et détection de signatures biologiques.", "Réseau de tourelles laser à pointage automatique pour la neutralisation de micro-météorites.", "Sas blindés à scellage magnétique et protocoles de dépressurisation sélective."],
+                lifeTitle: "Unités d'Évacuation d'Urgence",
+                lifeNames: ["Capsules de Sauvetage Classe-S", "Navettes Longue Distance"],
+                lifeDescs: ["80 capsules réparties sur tous les ponts, 15 personnes pendant 6 mois en biostase.", "2 vaisseaux de secours autonomes avec moteurs à distorsion pour rejoindre une base stellaire."],
+                decksTitle: "Configuration du Vaisseau",
+                deckNames: ["Pont Alpha - Commandement", "Pont Bêta - Résidentiel", "Pont Gamma - Ingénierie"],
+                deckDescs: ["Passerelle de navigation, centre de communication sub-espace et quartiers des officiers.", "Cabines de luxe avec vue sur le vide spatial, jardins hydroponiques et loisirs.", "Maintenance des réacteurs, support de vie et baies cryogéniques."],
+                footer: "© 2026 Tryx Horizons – Département de Technologie Navale",
+                popup: ["ALERTE : Transmission urgente reçue !", "CONSULTER"]
+            }
+        };
+
+        function applyTranslation(lang) {
+            const t = translations[lang];
+            document.getElementById('n-acc').innerHTML = t.nav[0];
+            document.getElementById('n-dest').innerHTML = t.nav[1];
+            document.getElementById('n-vais').innerHTML = t.nav[2];
+            document.getElementById('n-onboard').innerHTML = t.nav[3];
+            document.getElementById('n-work').innerHTML = t.nav[4];
+            document.getElementById('n-cont').innerHTML = t.nav[5];
+            document.getElementById('status-text').textContent = t.status;
+            document.getElementById('page-title').textContent = t.title;
+            document.getElementById('page-slogan').textContent = t.slogan;
+            document.getElementById('v-sub').textContent = t.sub;
+            document.getElementById('v-class').textContent = t.class;
+            document.getElementById('l-prop').textContent = t.labels[0];
+            document.getElementById('l-speed').textContent = t.labels[1];
+            document.getElementById('l-shield').textContent = t.labels[2];
+            document.getElementById('l-energy').textContent = t.labels[3];
+
+            const specs = document.querySelectorAll('.spec-value');
+            specs.forEach((s, i) => s.textContent = t.vValues[i]);
+
+            document.getElementById('sec-title').textContent = t.secTitle;
+            document.getElementById('sec1-name').textContent = t.secNames[0];
+            document.getElementById('sec1-desc').textContent = t.secDescs[0];
+            document.getElementById('sec2-name').textContent = t.secNames[1];
+            document.getElementById('sec2-desc').textContent = t.secDescs[1];
+            document.getElementById('sec3-name').textContent = t.secNames[2];
+            document.getElementById('sec3-desc').textContent = t.secDescs[2];
+
+            document.getElementById('life-title').textContent = t.lifeTitle;
+            document.getElementById('life1-name').textContent = t.lifeNames[0];
+            document.getElementById('life1-desc').textContent = t.lifeDescs[0];
+            document.getElementById('life2-name').textContent = t.lifeNames[1];
+            document.getElementById('life2-desc').textContent = t.lifeDescs[1];
+            document.getElementById('l-auto').textContent = t.labels[7];
+            document.getElementById('l-warp').textContent = t.labels[8];
+
+            document.getElementById('decks-title').textContent = t.decksTitle;
+            document.getElementById('deck1-name').textContent = t.deckNames[0];
+            document.getElementById('deck1-desc').textContent = t.deckDescs[0];
+            document.getElementById('deck2-name').textContent = t.deckNames[1];
+            document.getElementById('deck2-desc').textContent = t.deckDescs[1];
+            document.getElementById('deck3-name').textContent = t.deckNames[2];
+            document.getElementById('deck3-desc').textContent = t.deckDescs[2];
+            document.getElementById('l-access').textContent = t.labels[4];
+            document.getElementById('l-capacity').textContent = t.labels[5];
+            document.getElementById('l-status').textContent = t.labels[6];
+            document.getElementById('f-text').innerHTML = t.footer;
+
+            const popupText = document.getElementById('popup-text');
+            const popupLink = document.getElementById('popup-link');
+            if (popupText && popupLink) {
+                popupText.textContent = t.popup[0];
+                popupLink.textContent = t.popup[1];
+            }
+        }
+
+        applyTranslation(currentLang);
+
+        window.addEventListener('load', () => {
+            applyTranslation(currentLang);
+            const popup = document.getElementById('urgent-popup');
+            if (sessionStorage.getItem('showUrgentPopup') === 'true') {
+                if (popup) popup.classList.add('show');
+            }
+            document.getElementById('close-popup')?.addEventListener('click', () => {
+                popup.classList.remove('show');
+                sessionStorage.setItem('showUrgentPopup', 'dismissed');
+            });
+            document.getElementById('popup-link')?.addEventListener('click', () => {
+                sessionStorage.setItem('triggerNostromo', 'true');
+                sessionStorage.setItem('showUrgentPopup', 'dismissed');
+            });
+        });
+
+        btn.addEventListener('click', () => {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            sessionStorage.setItem('siteLang', currentLang);
+            applyTranslation(currentLang);
+        });
+    </script>
+
+    <div id="urgent-popup" class="urgent-popup">
+        <div class="popup-content">
+            <span class="warning-icon">⚠️</span>
+            <span id="popup-text">ALERT: Urgent transmission received!</span>
+            <a href="contact.html#log-section" id="popup-link" class="popup-btn">VIEW</a>
+            <button id="close-popup" class="close-btn">&times;</button>
+        </div>
+    </div>
+</body>
+</html>

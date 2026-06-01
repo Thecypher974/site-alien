@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>À Bord – Astra Voyager – Tryx Horizons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_anglais.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav class="menu">
+        <div class="menu-logo">TRYX<span>H</span></div>
+        <ul>
+            <li><a href="index.html" id="n-acc"><span>🏠</span> Home</a></li>
+            <li><a href="destinations.html" id="n-dest"><span>🪐</span> Destinations</a></li>
+            <li><a href="vaisseau_page.html" id="n-vais"><span>🚀</span> Ship</a></li>
+            <li><a href="on_board.html" id="n-onboard"><span>🛋️</span> On Board</a></li>
+            <li><a href="work.html" id="n-work"><span>💼</span> Careers</a></li>
+            <li><a href="contact.html" id="n-cont"><span>📞</span> Contact</a></li>
+            <li><button id="btn-translate" class="translate-btn">EN / FR</button></li>
+        </ul>
+        <div class="system-status">
+            <span class="dot"></span> <span id="status-text">SYSTEM OPERATIONAL</span>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <header>
+            <h1 id="page-title">Life On Board</h1>
+            <p class="slogan" id="page-slogan">Absolute comfort among the stars</p>
+        </header>
+
+        <main>
+            <section id="lifestyle">
+                <h2 id="l-title">Travel Experience</h2>
+                <div class="destinations-grid">
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="h1-name">Stellar Gastronomy</h3>
+                        </div>
+                        <p id="h1-desc">Taste dishes prepared by starred chefs using fresh products from our hydroponic gardens. Menus adapted for micro-gravity.</p>
+                    </div>
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="h2-name">Wellness & Spa</h3>
+                        </div>
+                        <p id="h2-desc">Micro-gravity massages, starlight baths, and Earth environment simulators (forests, beaches) for total rejuvenation.</p>
+                    </div>
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="h3-name">Entertainment</h3>
+                        </div>
+                        <p id="h3-desc">360° holographic cinema, kinetic gym, and panoramic observation deck to admire nebulas in high definition.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="accommodation" style="margin-top: 50px;">
+                <h2 id="acc-title">Prestige Accommodation</h2>
+                <div class="destinations-grid">
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="h4-name">Nebula Suites</h3>
+                        </div>
+                        <p id="h4-desc">Spacious cabins with high-resistance crystal domes to sleep literally among the stars.</p>
+                    </div>
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="h5-name">Zen Gravity Quarters</h3>
+                        </div>
+                        <p id="h5-desc">Adjustable gravity zones according to your preferences for deep sleep and optimal recovery.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="safety" style="margin-top: 50px; padding-bottom: 50px;">
+                <h2 id="s-title">Safety & Health</h2>
+                <div class="dest-card" style="width: 100%;">
+                    <p id="s-desc">Your safety is our priority. The ship is equipped with a cutting-edge medical center with surgical AI and military-grade cosmic radiation protection.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p id="f-text">&copy; 2026 Tryx Horizons – Interstellar Concierge</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+
+    <script>
+        const btn = document.getElementById('btn-translate');
+        let currentLang = sessionStorage.getItem('siteLang') || 'en';
+
+        const translations = {
+            en: {
+                nav: ["<span>🏠</span> Home", "<span>🪐</span> Destinations", "<span>🚀</span> Ship", "<span>🛋️</span> On Board", "<span>💼</span> Careers", "<span>📞</span> Contact"],
+                status: "SYSTEM OPERATIONAL",
+                title: "Life On Board",
+                slogan: "Absolute comfort among the stars",
+                lTitle: "Travel Experience",
+                accTitle: "Prestige Accommodation",
+                sTitle: "Safety & Health",
+                hNames: [
+                    "Stellar Gastronomy", 
+                    "Wellness & Spa", 
+                    "Entertainment", 
+                    "Nebula Suites", 
+                    "Zen Gravity Quarters"
+                ],
+                hDescs: [
+                    "Taste dishes prepared by starred chefs using fresh products from our hydroponic gardens. Menus adapted for micro-gravity.",
+                    "Micro-gravity massages, starlight baths, and Earth environment simulators (forests, beaches) for total rejuvenation.",
+                    "360° holographic cinema, kinetic gym, and panoramic observation deck to admire nebulas in high definition.",
+                    "Spacious cabins with high-resistance crystal domes to sleep literally among the stars.",
+                    "Adjustable gravity zones according to your preferences for deep sleep and optimal recovery."
+                ],
+                sDesc: "Your safety is our priority. The ship is equipped with a cutting-edge medical center with surgical AI and military-grade cosmic radiation protection.",
+                footer: "© 2026 Tryx Horizons – Interstellar Concierge",
+                popup: ["ALERT: Urgent transmission received!", "VIEW"]
+            },
+            fr: {
+                nav: ["<span>🏠</span> Accueil", "<span>🪐</span> Destinations", "<span>🚀</span> Vaisseau", "<span>🛋️</span> À Bord", "<span>💼</span> Recrutement", "<span>📞</span> Contact"],
+                status: "SYSTÈME OPÉRATIONNEL",
+                title: "Vie à Bord",
+                slogan: "Le confort absolu entre les étoiles",
+                lTitle: "Expérience de Voyage",
+                accTitle: "Hébergements de Prestige",
+                sTitle: "Sécurité & Santé",
+                hNames: [
+                    "Gastronomie Stellaire", 
+                    "Bien-être & Spa", 
+                    "Divertissement", 
+                    "Suites Nébuleuses", 
+                    "Quartiers Gravité Zen"
+                ],
+                hDescs: [
+                    "Dégustez des plats préparés par des chefs étoilés utilisant des produits frais de nos jardins. Menus adaptés à la micro-gravité.",
+                    "Massages en micro-gravité, bains de lumière stellaire et simulateurs d'environnements terrestres pour un ressourcement total.",
+                    "Cinéma holographique à 360°, salle de sport cinétique et pont d'observation panoramique pour admirer les nébuleuses.",
+                    "Cabines spacieuses avec dôme en cristal transparent pour dormir littéralement au milieu des étoiles.",
+                    "Zones à gravité ajustable selon vos préférences pour un sommeil profond et une récupération optimale."
+                ],
+                sDesc: "Votre sécurité est notre priorité. Le vaisseau est équipé d'un centre médical de pointe avec IA chirurgicale et de protocoles de protection contre les radiations.",
+                footer: "© 2026 Tryx Horizons – Conciergerie Interstellaire",
+                popup: ["ALERTE : Transmission urgente reçue !", "CONSULTER"]
+            }
+        };
+
+        function applyTranslation(lang) {
+            const t = translations[lang];
+            document.getElementById('n-acc').innerHTML = t.nav[0];
+            document.getElementById('n-dest').innerHTML = t.nav[1];
+            document.getElementById('n-vais').innerHTML = t.nav[2];
+            document.getElementById('n-onboard').innerHTML = t.nav[3];
+            document.getElementById('n-work').innerHTML = t.nav[4];
+            document.getElementById('n-cont').innerHTML = t.nav[5];
+            document.getElementById('status-text').textContent = t.status;
+            document.getElementById('page-title').textContent = t.title;
+            document.getElementById('page-slogan').textContent = t.slogan;
+            document.getElementById('l-title').textContent = t.lTitle;
+            document.getElementById('acc-title').textContent = t.accTitle;
+            document.getElementById('s-title').textContent = t.sTitle;
+            document.getElementById('s-desc').textContent = t.sDesc;
+            
+            for(let i=1; i<=5; i++) {
+                document.getElementById(`h${i}-name`).textContent = t.hNames[i-1];
+                document.getElementById(`h${i}-desc`).textContent = t.hDescs[i-1];
+            }
+            document.getElementById('f-text').innerHTML = t.footer;
+
+            const popupText = document.getElementById('popup-text');
+            const popupLink = document.getElementById('popup-link');
+            if (popupText && popupLink) {
+                popupText.textContent = t.popup[0];
+                popupLink.textContent = t.popup[1];
+            }
+        }
+
+        applyTranslation(currentLang);
+
+        window.addEventListener('load', () => {
+            applyTranslation(currentLang);
+            const popup = document.getElementById('urgent-popup');
+            if (sessionStorage.getItem('showUrgentPopup') === 'true') {
+                if (popup) popup.classList.add('show');
+            }
+            document.getElementById('close-popup')?.addEventListener('click', () => {
+                popup.classList.remove('show');
+                sessionStorage.setItem('showUrgentPopup', 'dismissed');
+            });
+            document.getElementById('popup-link')?.addEventListener('click', () => {
+                sessionStorage.setItem('triggerNostromo', 'true');
+                sessionStorage.setItem('showUrgentPopup', 'dismissed');
+            });
+        });
+
+        btn.addEventListener('click', () => {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            sessionStorage.setItem('siteLang', currentLang);
+            applyTranslation(currentLang);
+        });
+    </script>
+
+    <div id="urgent-popup" class="urgent-popup">
+        <div class="popup-content">
+            <span class="warning-icon">⚠️</span>
+            <span id="popup-text">ALERT: Urgent transmission received!</span>
+            <a href="contact.html#log-section" id="popup-link" class="popup-btn">VIEW</a>
+            <button id="close-popup" class="close-btn">&times;</button>
+        </div>
+    </div>
+</body>
+</html>

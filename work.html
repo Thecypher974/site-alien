@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recrutement – Tryx Horizons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css_anglais.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="particles-js"></div>
+
+    <nav class="menu">
+        <div class="menu-logo">TRYX<span>H</span></div>
+        <ul>
+            <li><a href="index.html" id="n-acc"><span>🏠</span> Home</a></li>
+            <li><a href="destinations.html" id="n-dest"><span>🪐</span> Destinations</a></li>
+            <li><a href="vaisseau_page.html" id="n-vais"><span>🚀</span> Ship</a></li>
+            <li><a href="on_board.html" id="n-onboard"><span>🛋️</span> On Board</a></li>
+            <li><a href="work.html" id="n-work" class="active"><span>💼</span> Careers</a></li>
+            <li><a href="contact.html" id="n-cont"><span>📞</span> Contact</a></li>
+            <li><button id="btn-translate" class="translate-btn">EN / FR</button></li>
+        </ul>
+        <div class="system-status">
+            <span class="dot"></span> <span id="status-text">SYSTEM OPERATIONAL</span>
+        </div>
+    </nav>
+
+    <div class="content-wrapper">
+        <header>
+            <h1 id="page-title">Join the Adventure</h1>
+            <p class="slogan" id="page-slogan">Shape the future of humanity among the stars</p>
+        </header>
+
+        <main>
+            <section id="jobs">
+                <h2 id="j-title">Open Positions</h2>
+                <div class="destinations-grid">
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="j1-name">Fusion Propulsion Engineer</h3>
+                        </div>
+                        <p id="j1-desc">HE-3 reactor maintenance and photonic thrust optimization. Interstellar certification required.</p>
+                        <ul class="dest-specs">
+                            <li><span id="l-loc1">Location:</span> Astra Voyager</li>
+                            <li><span class="j-sal-lab">Salary:</span> <span id="v-sal1">18,000 Cr/mo</span></li>
+                            <li><span class="j-con-lab">Contract:</span> <span id="v-con1">Career / 6mo Mission</span></li>
+                            <li><span class="j-bon-lab">Mission Bonus:</span> <span id="v-bon1">+25% Deep Space Risk</span></li>
+                        </ul>
+                    </div>
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="j2-name">Exoplanet Pilot</h3>
+                        </div>
+                        <p id="j2-desc">Dense atmosphere navigation (Titan) and landing procedures on cryogenic terrains.</p>
+                        <ul class="dest-specs">
+                            <li><span id="l-loc2">Location:</span> Exploration Fleet</li>
+                            <li><span class="j-sal-lab">Salary:</span> <span id="v-sal2">15,000 Cr/mo</span></li>
+                            <li><span class="j-con-lab">Contract:</span> <span id="v-con2">Career / Colonial</span></li>
+                            <li><span class="j-bon-lab">Mission Bonus:</span> <span id="v-bon2">+15% Hazard Pay</span></li>
+                        </ul>
+                    </div>
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="j3-name">Stellar Hospitality Specialist</h3>
+                        </div>
+                        <p id="j3-desc">Ensure 5-star comfort in microgravity for our prestige passengers.</p>
+                        <ul class="dest-specs">
+                            <li><span id="l-loc3">Location:</span> Deck Beta</li>
+                            <li><span class="j-sal-lab">Salary:</span> <span id="v-sal3">9,000 Cr/mo</span></li>
+                            <li><span class="j-con-lab">Contract:</span> <span id="v-con3">Seasonal / Flex</span></li>
+                            <li><span class="j-bon-lab">Mission Bonus:</span> <span id="v-bon3">Housing + 10% Tips</span></li>
+                        </ul>
+                    </div>
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="j4-name">Astrobiologist</h3>
+                        </div>
+                        <p id="j4-desc">Research for micro-organisms in Europa's sub-glacial oceans. PhD in exobiology required.</p>
+                        <ul class="dest-specs">
+                            <li><span id="l-loc4">Location:</span> Cryo-Enigma</li>
+                            <li><span class="j-sal-lab">Salary:</span> <span id="v-sal4">17,000 Cr/mo</span></li>
+                            <li><span class="j-con-lab">Contract:</span> <span id="v-con4">Grant / Tenure</span></li>
+                            <li><span class="j-bon-lab">Mission Bonus:</span> <span id="v-bon4">+10% Discovery Bonus</span></li>
+                        </ul>
+                    </div>
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3 id="j5-name">Cyber Security Officer</h3>
+                        </div>
+                        <p id="j5-desc">Protection of 'Aegis' AI systems against electromagnetic interference and sub-space hacking.</p>
+                        <ul class="dest-specs">
+                            <li><span id="l-loc5">Location:</span> Command Center</li>
+                            <li><span class="j-sal-lab">Salary:</span> <span id="v-sal5">14,000 Cr/mo</span></li>
+                            <li><span class="j-con-lab">Contract:</span> <span id="v-con5">Security CDD</span></li>
+                            <li><span class="j-bon-lab">Mission Bonus:</span> <span id="v-bon5">Cyber-Health Package</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section id="hired-crew">
+                <h2 id="c-title-crew">Crew on Mission</h2>
+                <p id="c-subtitle-crew" class="slogan" style="margin-bottom: 30px; text-align: center;">Personnel from the USCSS Nostromo - Commercial Towing Vehicle</p>
+                <div class="destinations-grid">
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3>A.J. Dallas</h3>
+                            <span class="dest-tag">COMMANDER</span>
+                        </div>
+                        <p id="c1-desc">Veteran of commercial space exploration, responsible for ship strategy and safety.</p>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3>G.W. Kane</h3>
+                            <span class="dest-tag">EXECUTIVE OFFICER</span>
+                        </div>
+                        <p id="c2-desc">Expert in extra-vehicular activity protocols and deck operations management.</p>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3>E.L. Ripley</h3>
+                            <span class="dest-tag">WARRANT OFFICER</span>
+                        </div>
+                        <p id="c3-desc">Specialist in logistics and quarantine protocols. Exemplary vigilance.</p>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3>J.M. Lambert</h3>
+                            <span class="dest-tag">NAVIGATOR</span>
+                        </div>
+                        <p id="c4-desc">Sub-space trajectory calculation and long-range detection systems management.</p>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3>Ash</h3>
+                            <span class="dest-tag">SCIENCE OFFICER</span>
+                        </div>
+                        <p id="c5-desc">Biological data analysis and synthetic systems expert. A purely logical mind.</p>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3>J.T. Parker</h3>
+                            <span class="dest-tag">CHIEF ENGINEER</span>
+                        </div>
+                        <p id="c6-desc">Mechanical genius, keeps fusion engines operational in the harshest conditions.</p>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3>S.E. Brett</h3>
+                            <span class="dest-tag">ENGINEERING TECH</span>
+                        </div>
+                        <p id="c7-desc">Technical maintenance specialist. Works with the chief engineer on ship structure.</p>
+                    </div>
+
+                    <div class="dest-card">
+                        <div class="dest-header">
+                            <h3>CLEM TRYX</h3>
+                            <span class="dest-tag">ALIEN ENGINEER</span>
+                        </div>
+                        <p id="c8-desc">Expert in non-human technologies and integration of exogenous biological systems.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="benefits" style="margin-top: 50px; padding-bottom: 50px;">
+                <h2 id="b-title">Employee Benefits</h2>
+                <div class="dest-card" style="width: 100%;">
+                    <p id="b-desc">Universal health insurance, continuous training, 1 month Earth leave every 6 months, and family relocation options to orbital stations.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p id="f-text">&copy; 2026 Tryx Horizons – Human Resources Department</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="particles-config.js"></script>
+
+    <script>
+        const btn = document.getElementById('btn-translate');
+        let currentLang = sessionStorage.getItem('siteLang') || 'en';
+
+        const translations = {
+            en: {
+                nav: ["<span>🏠</span> Home", "<span>🪐</span> Destinations", "<span>🚀</span> Ship", "<span>🛋️</span> On Board", "<span>💼</span> Careers", "<span>📞</span> Contact"],
+                status: "SYSTEM OPERATIONAL",
+                title: "Join the Adventure",
+                slogan: "Shape the future of humanity among the stars",
+                jTitle: "Open Positions",
+                cTitle: "Crew on Mission",
+                cSubtitle: "Personnel from the USCSS Nostromo - Commercial Towing Vehicle",
+                cRoles: ["COMMANDER", "EXECUTIVE OFFICER", "WARRANT OFFICER", "NAVIGATOR", "SCIENCE OFFICER", "CHIEF ENGINEER", "ENGINEERING TECH", "ALIEN ENGINEER"],
+                cDescs: [
+                    "Veteran of commercial space exploration, responsible for ship strategy and safety.",
+                    "Expert in extra-vehicular activity protocols and deck operations management.",
+                    "Specialist in logistics and quarantine protocols. Exemplary vigilance.",
+                    "Sub-space trajectory calculation and long-range detection systems management.",
+                    "Biological data analysis and synthetic systems expert. A purely logical mind.",
+                    "Mechanical genius, keeps fusion engines operational in the harshest conditions.",
+                    "Technical maintenance specialist. Works with the chief engineer on ship structure.",
+                    "Expert in non-human technologies and integration of exogenous biological systems."
+                ],
+                bTitle: "Employee Benefits",
+                jNames: ["Fusion Propulsion Engineer", "Exoplanet Pilot", "Stellar Hospitality Specialist", "Astrobiologist", "Cyber Security Officer"],
+                jDescs: [
+                    "HE-3 reactor maintenance and photonic thrust optimization. Interstellar certification required.",
+                    "Dense atmosphere navigation (Titan) and landing procedures on cryogenic terrains.",
+                    "Ensure 5-star comfort in microgravity for our prestige passengers.",
+                    "Research for micro-organisms in Europa's sub-glacial oceans. PhD in exobiology required.",
+                    "Protection of 'Aegis' AI systems against electromagnetic interference and sub-space hacking."
+                ],
+                jLabels: ["Location:", "Salary:", "Contract:", "Mission Bonus:"],
+                jSalaries: ["18,000 Cr/mo", "15,000 Cr/mo", "9,000 Cr/mo", "17,000 Cr/mo", "14,000 Cr/mo"],
+                jContracts: ["Career / 6mo Mission", "Career / Colonial", "Seasonal / Flex", "Grant / Tenure", "Security CDD"],
+                jBonuses: ["+25% Deep Space Risk", "+15% Hazard Pay", "Housing + 10% Tips", "+10% Discovery Bonus", "Cyber-Health Package"],
+                bDesc: "Universal health insurance, continuous training, 1 month Earth leave every 6 months, and family relocation options to orbital stations.",
+                footer: "© 2026 Tryx Horizons – Human Resources Department",
+                popup: ["ALERT: Urgent transmission received!", "VIEW"]
+            },
+            fr: {
+                nav: ["<span>🏠</span> Accueil", "<span>🪐</span> Destinations", "<span>🚀</span> Vaisseau", "<span>🛋️</span> À Bord", "<span>💼</span> Recrutement", "<span>📞</span> Contact"],
+                status: "SYSTÈME OPÉRATIONNEL",
+                title: "Rejoignez l'Aventure",
+                slogan: "Façonnez l'avenir de l'humanité parmi les étoiles",
+                jTitle: "Postes Ouverts",
+                cTitle: "Équipage en Mission",
+                cSubtitle: "Personnel de l'USCSS Nostromo - Remorqueur Spatial Commercial",
+                cRoles: ["COMMANDANT", "OFFICIER EN SECOND", "OFFICIER DE PONT", "NAVIGATRICE", "OFFICIER SCIENTIFIQUE", "INGÉNIEUR EN CHEF", "TECHNICIEN", "INGÉNIEUR EXTRATERRESTRE"],
+                cDescs: [
+                    "Vétéran de l'exploration spatiale commerciale, responsable de la stratégie et de la sécurité.",
+                    "Expert en protocoles de sortie extra-véhiculaire et gestion des opérations de pont.",
+                    "Spécialiste en logistique et respect des protocoles de quarantaine. Vigilance exemplaire.",
+                    "Calcul des trajectoires sub-espace et gestion des systèmes de détection longue portée.",
+                    "Analyse des données biologiques et expert en systèmes synthétiques. Esprit logique.",
+                    "Génie de la mécanique, maintient les moteurs à fusion opérationnels.",
+                    "Spécialiste technique de maintenance. Travaille sur la structure du vaisseau.",
+                    "Expert en technologies non-humaines et intégration de systèmes biologiques exogènes."
+                ],
+                bTitle: "Avantages Collaborateurs",
+                jNames: ["Ingénieur Propulsion Fusion", "Pilote d'Exoplanète", "Spécialiste Hospitalité Stellaire", "Astrobiologiste", "Officier Sécurité Cyber"],
+                jDescs: [
+                    "Maintenance des réacteurs HE-3 et optimisation de la poussée photonique. Certification requise.",
+                    "Navigation en atmosphère dense (Titan) et atterrissage sur terrains cryogéniques.",
+                    "Garantir un confort 5 étoiles en microgravité pour nos passagers de prestige.",
+                    "Recherche de micro-organismes dans les océans sous-glaciaires d'Europa. Doctorat requis.",
+                    "Protection des systèmes IA 'Aegis' contre les interférences et piratage sub-espace."
+                ],
+                jLabels: ["Lieu :", "Salaire :", "Contrat :", "Prime :"],
+                jSalaries: ["18 000 Cr/mois", "15 000 Cr/mois", "9 000 Cr/mois", "17 000 Cr/mois", "14 000 Cr/mois"],
+                jContracts: ["Carrière / Mission 6m", "Carrière / Colonial", "Saisonnier / Flexible", "Bourse / Titularisation", "Sécurité CDD"],
+                jBonuses: ["+25% Risque Espace", "+15% Prime de Risque", "Logement + 10% Pourboires", "+10% Découverte", "Pack Cyber-Santé"],
+                bDesc: "Assurance santé universelle, formation continue, 1 mois de congé terrestre tous les 6 mois, et relocalisation familiale en station orbitale.",
+                footer: "© 2026 Tryx Horizons – Département des Ressources Humaines",
+                popup: ["ALERTE : Transmission urgente reçue !", "CONSULTER"]
+            }
+        };
+
+        function applyTranslation(lang) {
+            const t = translations[lang];
+            document.getElementById('n-acc').innerHTML = t.nav[0];
+            document.getElementById('n-dest').innerHTML = t.nav[1];
+            document.getElementById('n-vais').innerHTML = t.nav[2];
+            document.getElementById('n-onboard').innerHTML = t.nav[3];
+            document.getElementById('n-work').innerHTML = t.nav[4];
+            document.getElementById('n-cont').innerHTML = t.nav[5];
+            document.getElementById('status-text').textContent = t.status;
+            document.getElementById('page-title').textContent = t.title;
+            document.getElementById('page-slogan').textContent = t.slogan;
+            document.getElementById('j-title').textContent = t.jTitle;
+            document.getElementById('b-title').textContent = t.bTitle;
+            document.getElementById('b-desc').textContent = t.bDesc;
+            document.getElementById('c-title-crew').textContent = t.cTitle;
+            document.getElementById('c-subtitle-crew').textContent = t.cSubtitle;
+            
+            for(let i=1; i<=5; i++) {
+                document.getElementById(`j${i}-name`).textContent = t.jNames[i-1];
+                document.getElementById(`j${i}-desc`).textContent = t.jDescs[i-1];
+                document.getElementById(`l-loc${i}`).textContent = t.jLabels[0];
+
+                document.getElementById(`v-sal${i}`).textContent = t.jSalaries[i-1];
+                document.getElementById(`v-con${i}`).textContent = t.jContracts[i-1];
+                document.getElementById(`v-bon${i}`).textContent = t.jBonuses[i-1];
+            }
+
+            document.querySelectorAll('.j-sal-lab').forEach(el => el.textContent = t.jLabels[1]);
+            document.querySelectorAll('.j-con-lab').forEach(el => el.textContent = t.jLabels[2]);
+            document.querySelectorAll('.j-bon-lab').forEach(el => el.textContent = t.jLabels[3]);
+
+            // Mise à jour de l'équipage
+            const crewCards = document.querySelectorAll('#hired-crew .dest-card');
+            crewCards.forEach((card, index) => {
+                card.querySelector('.dest-tag').textContent = t.cRoles[index];
+                const descId = `c${index+1}-desc`;
+                if(document.getElementById(descId)) document.getElementById(descId).textContent = t.cDescs[index];
+            });
+
+            document.getElementById('f-text').innerHTML = t.footer;
+
+            const popupText = document.getElementById('popup-text');
+            const popupLink = document.getElementById('popup-link');
+            if (popupText && popupLink) {
+                popupText.textContent = t.popup[0];
+                popupLink.textContent = t.popup[1];
+            }
+        }
+
+        applyTranslation(currentLang);
+
+        window.addEventListener('load', () => {
+            applyTranslation(currentLang);
+            const popup = document.getElementById('urgent-popup');
+            if (sessionStorage.getItem('showUrgentPopup') === 'true') {
+                if (popup) popup.classList.add('show');
+            }
+            document.getElementById('close-popup')?.addEventListener('click', () => {
+                popup.classList.remove('show');
+                sessionStorage.setItem('showUrgentPopup', 'dismissed');
+            });
+            document.getElementById('popup-link')?.addEventListener('click', () => {
+                sessionStorage.setItem('triggerNostromo', 'true');
+                sessionStorage.setItem('showUrgentPopup', 'dismissed');
+            });
+        });
+
+        btn.addEventListener('click', () => {
+            currentLang = currentLang === 'fr' ? 'en' : 'fr';
+            sessionStorage.setItem('siteLang', currentLang);
+            applyTranslation(currentLang);
+        });
+    </script>
+
+    <div id="urgent-popup" class="urgent-popup">
+        <div class="popup-content">
+            <span class="warning-icon">⚠️</span>
+            <span id="popup-text">ALERT: Urgent transmission received!</span>
+            <a href="contact.html#log-section" id="popup-link" class="popup-btn">VIEW</a>
+            <button id="close-popup" class="close-btn">&times;</button>
+        </div>
+    </div>
+</body>
+</html>
